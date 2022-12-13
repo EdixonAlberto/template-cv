@@ -1,0 +1,7 @@
+$name-font: '';
+
+@font-face {
+  src: url($path-fonts + '#{$name-font}-Light.ttf') format('truetype');
+  font-family: $name-font;
+  font-weight: 100;
+}
