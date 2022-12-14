@@ -1,15 +1,6 @@
-# Template Sass
+# Template CV
 
-Template for creating websites using Sass.
-
-![template](https://repository-images.githubusercontent.com/388659547/a4de4abf-b9b7-4e87-965f-448d5e3fac32)
-
-In this template you will find a project structure ready to start building websites with
-Sass in a maintainable and scalable way. The following [guide](https://sass-guidelin.es/)
-was taken as a reference to create the directory structure for Sass.
-
-> **NOTE:** This template will be in constant evoluction, feel free to create a
-> [pull request](https://github.com/EdixonAlberto/template-sass/pulls) to improve it.
+Template cv created with HTML and Sass
 
 ### Technologies List
 
@@ -23,18 +14,18 @@ was taken as a reference to create the directory structure for Sass.
 ### Getting Started
 
 ```sh
-npm install
-npm run dev
+yarn
+yarn dev
 ```
 
-### Command List
+### Commands List
 
 ```sh
-npm run dev # To run project in development modo
+yarn dev # To run project in development modo
 
-npm run build # To build project in production modo
+yarn build # To build project in production modo
 
-npm run start # To build and run the project locally in production mode
+yarn start # To build and run the project locally in production mode
 
-npm run lint # Format code with prettier
+yarn lint # Format code with prettier
 ```

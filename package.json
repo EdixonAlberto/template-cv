@@ -1,8 +1,9 @@
 {
-  "name": "template-sass",
+  "name": "template-cv",
   "version": "0.0.1",
-  "description": "Template for creating websites using sass",
+  "description": "Template cv created with HTML and Sass",
   "keywords": [
+    "cv",
     "template",
     "sass",
     "postcss",
