@@ -1,7 +1,30 @@
-$name-font: '';
+$name-font: 'SF-Pro-Display';
 
 @font-face {
-  src: url($path-fonts + '#{$name-font}-Light.ttf') format('truetype');
+  src: url($path-fonts + '#{$name-font}-Regular.ttf') format('truetype');
   font-family: $name-font;
-  font-weight: 100;
+  font-weight: 400;
+}
+
+@font-face {
+  src: url($path-fonts + '#{$name-font}-Semibold.ttf') format('truetype');
+  font-family: $name-font;
+  font-weight: 600;
+}
+
+@font-face {
+  src: url($path-fonts + '#{$name-font}-Bold.ttf') format('truetype');
+  font-family: $name-font;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+p, span, a, li, b {
+  font-size: 14px;
+  font-weight: 400;
+  color: $color-black;
 }

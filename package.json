@@ -13,24 +13,23 @@
   "private": false,
   "author": {
     "name": "Edixon Piña",
-    "email": "edixonalbertto@gmail.com",
-    "url": "https://www.edixonalberto.com"
+    "email": "edixonalbertto@gmail.com"
   },
   "scripts": {
     "lint": "prettier --write public/*.html src/**/*.scss",
     "sass-build": "sass --style=compressed --no-source-map src/scss/main.scss:public/static/css/styles.css",
     "sass-watch": "sass --watch src/scss/main.scss:public/static/css/styles.css",
     "postcss-build": "postcss public/static/css/styles.css --no-map --use autoprefixer -o public/static/css/styles.css",
-    "serve": "live-server public --host=localhost --port=80",
-    "dev": "concurrently \"npm run sass-watch\" \"npm run serve\"",
-    "build": "npm run sass-build && npm run postcss-build",
-    "start": "npm run build && npm run serve"
+    "serve": "live-server public --host=localhost --port=8080",
+    "dev": "concurrently \"yarn sass-watch\" \"yarn serve\"",
+    "build": "yarn sass-build && yarn postcss-build",
+    "start": "yarn build && yarn serve"
   },
   "devDependencies": {
     "autoprefixer": "^10.3.1",
     "browserslist": "^4.16.6",
     "concurrently": "^6.2.0",
-    "live-server": "^1.2.1",
+    "live-server": "1.2.1",
     "postcss": "^8.3.6",
     "postcss-cli": "^8.3.1",
     "prettier": "^2.3.2",
