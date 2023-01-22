@@ -22,7 +22,7 @@ main.cv {
 
     hr {
       margin: 0;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       color: #d6d6d6;
       border-width: 0.5px;
     }
@@ -36,11 +36,11 @@ main.cv {
     overflow: hidden;
 
     section {
-      padding: 0 20px;
+      padding: 0 $padding-width;
     }
 
     section.header {
-      padding: 40px 0;
+      padding: $padding-height 0 40px 0;
       position: relative;
       text-align: center;
       color: $color-white;
@@ -64,7 +64,7 @@ main.cv {
 
       &::before {
         content: '';
-        width: 400px;
+        width: 405px;
         height: 300px;
         position: absolute;
         left: -80px;
@@ -97,31 +97,28 @@ main.cv {
       }
     }
 
-    section.experience {
+    section.skills {
       position: relative;
       z-index: 1;
 
-      .exp {
-        color: $color-main;
+      h3 {
+        font-weight: 700;
+        margin: 0;
+        margin-bottom: 5px;
+      }
 
-        h3 {
-          color: $color-black;
-          margin-bottom: 0;
-        }
-        .period {
-          font-size: 12px;
-          font-weight: 600;
-        }
-        p {
-          margin: 0;
-          font-size: 12px;
-        }
+      p {
+        margin: 0;
+        margin-top: -8px;
+        margin-bottom: 12px;
+        line-height: 30px;
+        text-align: justify;
       }
     }
 
     &::before {
       content: '';
-      width: 400px;
+      width: 405px;
       height: 300px;
       position: absolute;
       bottom: 70px;
@@ -139,41 +136,69 @@ main.cv {
       bottom: 0;
       left: 0;
       background: $color-main;
-      border-radius: -50%;
     }
   }
 
   .profile {
     width: 70%;
     height: 100%;
-    margin-top: 80px;
-    padding: 0 20px;
+    padding: $padding-height $padding-width;
 
     section.bio {
       h2 {
         margin: 0;
       }
+      p {
+        margin: 8px 0;
+      }
     }
 
-    section.skills {
-      b {
-        font-weight: 700;
-      }
+    section.experience {
+      .exp {
+        margin-bottom: 12px;
+        color: $color-main;
 
-      ul {
-        list-style: none;
-        margin-top: 5px;
-        padding-left: 20px;
+        .header {
+          display: flex;
+          margin-bottom: 5px;
+          align-items: center;
+          justify-content: flex-start;
+          column-gap: 8px;
 
-        li {
-          padding: 5px 0;
+          h3 {
+            width: max-content;
+            display: inline;
+            margin: 0;
+            color: $color-black;
+          }
+          .company {
+            width: 45%;
+            margin: 0;
+          }
+          .period {
+            margin-left: auto;
+            font-size: 12px;
+            font-weight: 600;
+            color: $color-main;
+          }
+        }
+
+        ul.projects {
+          margin: 0;
+          margin-left: 15px;
+          margin-bottom: 10px;
+          padding: 0;
+
+          li {
+            font-size: 12px;
+          }
         }
       }
     }
 
     section.training {
       .train {
-        margin-bottom: 20px;
+        margin-bottom: 12px;
 
         .title {
           display: flex;
@@ -181,7 +206,7 @@ main.cv {
           justify-content: space-between;
 
           h3 {
-            width: 60%;
+            width: 80%;
             margin: 0;
             margin-bottom: 5px;
             color: $color-black;
@@ -190,6 +215,7 @@ main.cv {
             width: 40%;
             margin-left: 8px;
             color: $color-main;
+            font-size: 12px;
             font-weight: 600;
             text-align: right;
           }
@@ -197,9 +223,6 @@ main.cv {
 
         p {
           margin: 0;
-          padding-right: 40px;
-          font-size: 14px;
-          color: $color-main;
         }
       }
     }
